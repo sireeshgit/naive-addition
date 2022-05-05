@@ -1,6 +1,6 @@
 # Testing in Python
 
-At certain point in your career as a machine learning engineer, you will need to write functions, or even modules that are not readily offered by common packages. It is critical to detect bugs and inconsistencies in the early stage of the development. We here offer a *gentle* introduction to testing in Python (read [Test Driven Devlopment (TDD)](https://testdriven.io/test-driven-development/), a methodology in software development, think of it as "start from the end"), to set you up for being a better engineer!
+At certain point in your career as a machine learning engineer, you will need to write functions, or even modules that are not readily offered by common packages. It is critical to detect bugs and inconsistencies in the early stage of the development. We here offer a *gentle* introduction to testing in Python (read [Test Driven Development (TDD)](https://testdriven.io/test-driven-development/), a methodology in software development, think of it as "start from the end"), to set you up for being a better engineer!
 
 In this session, you will write unit tests, where a test case is the individual unit of testing and checks for a specific response to a particular set of inputs, test it using `pytest`, and practice [Git Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow). 
 
@@ -65,14 +65,14 @@ Say both work off Bill's repo. Bill adds Apple as collaborator, and Apple is the
     def test_add():
         assert add(1) == 101
     ```
-1. Run the test. 
+1. Run the test from your local repo's root directory. 
 
     ```bash
     PYTHONPATH=. pytest tests/test_add.py
     ```
     `PYTHONPATH=.` tells Python to search functions / modules in the current directory and is required to run the test successfully (you shall run `pytest tests/test_add.py` and inspect the output). Read [PYTHONPATH](https://docs.python.org/3/using/cmdline.html) if you are not familiar with it. 
 
-    The output shall look somthing similar to this
+    The output shall look something similar to this
     ![](../img/output-run-single-test.png)
 
     What do you see if you run `PYTHONPATH=. pytest`?
@@ -96,10 +96,10 @@ We would like to relax the function `add`, not to limit its parameters to intege
 Bill is the driver. Notice that both are working on the same feature, i.e., adding tests, so instead of creating a new branch, Bill works on the `add-tests` branch.
 
 1. Check out branch `add-tests` that Apple created.
-2. Add first test cases in `test_add.py` that first argument takes in a numpy array and check if the summation is as expected (keep your test case simple).
+2. Add first test cases in `test_add.py` that first argument takes in a `numpy` array and check if the summation is as expected (keep your test case simple).
 3. Run test using `pytest` and make sure all tests pass. 
 4. Commit your changes.
-5. Add second test cases where both arguments take numpy arrays; run test and make sure all tests pass, and commit your changes.
+5. Add second test cases where both arguments take `numpy` arrays; run test and make sure all tests pass, and commit your changes.
 6. Add third test cases where both arguments are `str`, e.g., `add("fourth", "Brain") == "fourthBrain"`; run test and make sure all tests pass, and commit your changes.
 7. Push your changes to the remote branch.
 8. Create a pull request on GitHub.
@@ -138,6 +138,6 @@ This task is more open-ended and do it if time permits it. Design a new feature 
 
 - [Cheat Sheet](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html), more details are in the documentation on module [`typing`](https://docs.python.org/3/library/typing.html)
 
-- If you are curious how to vaildate types in Python, [`mypy`](https://mypy.readthedocs.io/en/stable/getting_started.html) is a popurlar tool.
+- If you are curious how to validate types in Python, [`mypy`](https://mypy.readthedocs.io/en/stable/getting_started.html) is a popular tool.
     
     
