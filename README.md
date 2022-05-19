@@ -1,6 +1,10 @@
 <<<<<<< HEAD
 # naive-addition
 =======
+<<<<<<< HEAD
+# naive-addition
+=======
+>>>>>>> main
 <p align = "center" draggable=”false” ><img src="https://user-images.githubusercontent.com/37101144/161836199-fdb0219d-0361-4988-bf26-48b0fad160a3.png" 
      width="200px"
      height="auto"/>
@@ -103,4 +107,7 @@ Then click `Create Repository`.
 </details>
 
 ### That's it for now!  And so it begins.... :)
+<<<<<<< HEAD
+=======
 >>>>>>> acb8faeb945c6006828385af0207bad23d71e09a
+>>>>>>> main
